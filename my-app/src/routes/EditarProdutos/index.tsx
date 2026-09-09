@@ -7,6 +7,7 @@ const listaProdutos = [
 ];
 
 
+
 export default function EditarProdutos() {
 
     const { id } = useParams<string >();
@@ -17,6 +18,7 @@ export default function EditarProdutos() {
         <main>
             <h2>Editar Produtos</h2>
             <p>Página para editar produtos.</p>
+
             {produto ? (
                 <div>
                     <p>Nome: {produto.nome}</p>
