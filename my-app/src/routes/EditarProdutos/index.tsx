@@ -11,12 +11,13 @@ export default function EditarProdutos() {
 
     const { id } = useParams<string >();
 
-    const produto = listaProdutos.find((p) => p.id ===  Number(id));
-
+    const produto = listaProdutos.find( ( p )=> p.id === Number(id));
+    
     return (
         <main>
             <h2>Editar Produtos</h2>
             <p>Página para editar produtos.</p>
+
             {produto ? (
                 <div>
                     <p>Nome: {produto.nome}</p>
